@@ -3,3 +3,71 @@
 	margin: 0;
 	padding: 0;
 }
+
+body {
+
+}
+
+header {
+
+}
+
+h1 {
+
+}
+
+h2 {
+	text-transform: uppercase;
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+p {
+
+}
+
+hr {
+
+}
+
+span {
+	float: right;
+}
+
+.clearfix:after {
+	height: 0;
+	font-size: 0;
+	visibility: hidden;
+	display: block;
+	content: " ";
+	clear: both;
+}
+
+.roundcorn {
+	border-radius: 25px;
+	border: 20px solid white;
+	border-style: double;
+	background-color: #8c1821;
+	padding: 20px;
+	width: 30%;
+	height: 200px;
+	margin: 50px;
+}
+
+.roundcorn h2, h6 {
+	color: white;
+}
