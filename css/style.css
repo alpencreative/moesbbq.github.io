@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Fresca');
+@import url('https://fonts.googleapis.com/css?family=BioRhyme+Expanded');
+
 *{
 	box-sizing: border-box;
 	margin: 0;
@@ -5,19 +8,30 @@
 }
 
 body {
-
+	font-size: 15px;
 }
 
 header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
 
+a {
+	text-decoration: none;
+	color: black;
 }
 
 h1 {
-
+	font-family: 'BioRhyme Expanded', serif;
+	text-transform: uppercase;
 }
 
 h2 {
 	text-transform: uppercase;
+	font-family: 'Fresca', sans-serif;
 }
 
 h3 {
@@ -48,6 +62,14 @@ span {
 	float: right;
 }
 
+label {
+	display: none;
+	font-family: 'Fresca', sans-serif;
+	font-size: 1.7em;
+	vertical-align: middle;
+	z-index: 999;
+}
+
 .clearfix:after {
 	height: 0;
 	font-size: 0;
@@ -55,6 +77,92 @@ span {
 	display: block;
 	content: " ";
 	clear: both;
+}
+
+.navlinks {
+	font-family: 'Fresca', sans-serif;
+	text-align: center;	
+	list-style-type: none;
+	color: white;
+	font-weight: bolder;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	float: right;
+	padding: 1%;
+	display: block;
+/*	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-ms-transition: 0.2s;
+	-o-transition: 02s;
+	transition: 0.2s; */
+}
+
+.navlinks .dropbtn {
+	font-family: 'Fresca', sans-serif;
+	font-size: 1em;
+}
+
+.navlinks:hover {
+	color: #8c1821;
+}
+
+.mobile_toggle {
+	display: none;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.7em;
+	vertical-align: middle;
+	z-index: 999;
+}
+
+.dropbtn {
+    border: none;
+    margin: 0;
+    background: none;
+    cursor: pointer;
+    text-align: center;
+    list-style-type: none;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    text-transform: uppercase;
+    min-width: 100px;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+	padding: 1% 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(249, 249, 249, 0.87);
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 0;
+    z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #D6D0D0;
+	color: #8c1821;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: #D6D0D0;
 }
 
 .roundcorn {
@@ -68,6 +176,85 @@ span {
 	margin: 50px;
 }
 
+.dcont {
+	position: relative;
+}
+
 .roundcorn h2, h6 {
 	color: white;
 }
+
+.menu {
+	width: 40%;
+	margin: auto;
+}
+
+.bignavwd {
+    display: inline-block;
+    margin: 23% 5%;
+    font-family: 'BioRhyme Expanded', serif;
+    text-transform: uppercase;
+    font-size: 4.5em;
+    color: white;
+    background: rgba(108, 109, 109, 0.63);
+}
+
+.line {
+	width: 20px;
+	height: 3px;
+	background: #FFF;
+	margin: 2px 0;
+}
+
+#toggle {
+	display: none;
+}
+
+#bglandwds {
+	margin: auto;
+	text-align: center;
+}
+
+#landing {
+	background: url("../images/MOESPICFRONT.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 1200px;
+}
+
+#eat:hover #landing {
+	background: url();
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#drink:hover #landing {
+	background: url("../images/IMG_1231.JPG");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#listen:hover #landing {
+	background: url("../images/1hwT1KhPHnAPivA7idnxHC9jdtunWYYxdTQq3g3dOKU.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;	
+}
+
+@media only screen and (max-width: 900px) {
+	label {
+		display: block;
+		float:right;
+		padding: 15px;
+	}
+	nav{
+		display: none;
+		position: static;
+		clear:both;
+		background-image: none;
+	}
+	#toggle:checked + .container nav {	
+		display: block;
+	}
+	.mobile_toggle {
+		display: block;
+	}	
+}	

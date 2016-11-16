@@ -2,15 +2,50 @@
 <head>
 	<title>Moe's Original BBQ:: Tahoe City</title>
 	<meta charset="UTF-8">
-<!-- 	<link rel="icon" href="images/icon.ico"> -->
+	<link rel="icon" href="images/moeicon.ico">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	<header>
+		<label class="mobile_toggle" for="toggle">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</label>
+		<input type="checkbox" id="toggle">
+	    
+	    <div class="clearfix">
+	        <nav class="clearfix">
+	        	<a class="navlinks" href="#">Contact US</a>
+	            <div class="dropdown navlinks">
+	            	 <button id="nomobile" class="dropbtn">Music</button>
+	            	 <div class="dropdown-content">
+	            		<a class="dcont" href="#">Upcoming Events</a>
+						<a class="dcont" href="#">Lodging</a>
+	            	 </div>	
+	            </div>
+	            <div class="dropdown navlinks">
+	            	 <button id="nomobile" class="dropbtn">Catering</button>
+	            	 <div class="dropdown-content">
+	            		<a class="dcont" href="#">FAQs</a>
+						<a class="dcont" href="#">Inquiries</a>
+	            	 </div>	
+	            </div>
+	            <a class="navlinks" href="#">Menu</a>
+				<a class="navlinks" href="index.html">Home</a>
+	        </nav>
+	    </div>
 	</header>
-	<div class="clearfix">
+	<div id="landing">
+		<div id="bglandwds">
+			<a href="#" id="eat" class="bignavwd">Eat</a>
+			<a href="#" id="drink" class="bignavwd">Drink</a>
+			<a href="#" id="listen" class="bignavwd">Listen</a>
+		</div>
+	</div>
+	<div class="menu clearfix">
 		<h1>Menu</h1>
 		<h5>Moe's Original Bar.B.Que Smokes fresh meat daily. We operate on a first come first serve basis. So...when it's gone...its gone. However 24 hr notice guarantees large orders.</h5>
 		<h2>Meals</h2>
