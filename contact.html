@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<head>
+	<title>Moe's Original BBQ:: Tahoe City</title>
+	<meta charset="UTF-8">
+	<link rel="icon" href="images/moeicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header>
+		<label class="mobile_toggle" for="toggle">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</label>
+		<input type="checkbox" id="toggle">
+	    
+	    <div class="clearfix">
+	        <nav class="clearfix blknav">
+	        	<a class="navlinks clearfix" href="contact.html">Contact US</a>
+	            <div class="dropdown navlinks clearfix">
+	            	 <button id="nomobile" class="dropbtn">Music</button>
+	            	 <div class="dropdown-content">
+	            		<a class="dcont" href="events.html">Upcoming Events</a>
+						<a class="dcont" href="lodging.html">Lodging</a>
+	            	 </div>	
+	            </div>
+	            <div class="dropdown navlinks clearfix">
+	            	 <button id="nomobile" class="dropbtn">Catering</button>
+	            	 <div class="dropdown-content">
+	            		<a class="dcont" href="caterfaq.html">FAQs</a>
+						<a class="dcont" href="caterinquire.html">Inquiries</a>
+	            	 </div>	
+	            </div>
+	            <a class="navlinks clearfix" href="menu.html">Menu</a>
+				<a class="navlinks clearfix" href="index.html">Home</a>
+	        </nav>
+	    </div>
+	</header>
+	<div class="body_sections">
+		<h2 id="contact">Contact Us!</h2>
+	</div>
+	<div id="contactpg" class="wrapper">
+		<section class="section_body">
+			<div class="body_sections">
+				<div class="contact">
+					<form name="htmlform" method="post" action="html_form_send.php">
+						<table>
+							<!-- </tr> -->
+							<tr>
+							 <td valign="top">
+							  <label for="first_name">First Name *</label>
+							 </td>
+							 <td valign="top">
+							  <input  type="text" name="first_name" maxlength="100" size="80">
+							 </td>
+							</tr>
+	 
+							<tr>
+							 <td valign="top">
+							  <label for="last_name">Last Name *</label>
+							 </td>
+							 <td valign="top">
+							  <input  type="text" name="last_name" maxlength="50" size="80">
+							 </td>
+							</tr>
+
+							<tr>
+							 <td valign="top">
+							  <label for="email">Email Address *</label>
+							 </td>
+							 <td valign="top">
+							  <input  type="text" name="email" maxlength="80" size="80">
+							 </td>
+							</tr>
+
+							<tr>
+							 <td valign="top">
+							  <label for="telephone">Telephone Number</label>
+							 </td>
+							 <td valign="top">
+							  <input  type="text" name="telephone" maxlength="30" size="80">
+							 </td>
+							</tr>
+
+							<tr>
+							 <td valign="top">
+							  <label for="comments">Comments *</label>
+							 </td>
+							 <td valign="top">
+							  <textarea  name="comments" maxlength="1000" cols="80" rows="3"></textarea>
+							 </td>
+							</tr>
+							<tr>
+							 <td colspan="2" style="text-align:center">
+							  <input type="submit" value="Submit">
+							 </td>
+							</tr>
+							<tr>
+								<td colspan="2" style="text-align:center">
+									<p>* Required field</p>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+		</section>
+	</div>
+</body>
+</html>	

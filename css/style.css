@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Fresca');
 @import url('https://fonts.googleapis.com/css?family=BioRhyme+Expanded');
+@import url('https://fonts.googleapis.com/css?family=Signika:700');
 
 *{
 	box-sizing: border-box;
@@ -19,6 +20,10 @@ header {
 	z-index: 999;
 }
 
+footer {
+	background-color: white;
+}
+
 a {
 	text-decoration: none;
 	color: black;
@@ -27,11 +32,15 @@ a {
 h1 {
 	font-family: 'BioRhyme Expanded', serif;
 	text-transform: uppercase;
+	font-size: 4em;
+	padding: 1%;
 }
 
 h2 {
 	text-transform: uppercase;
 	font-family: 'Fresca', sans-serif;
+	font-size: 2.3em;
+	padding-top: 4%;
 }
 
 h3 {
@@ -43,19 +52,24 @@ h4 {
 }
 
 h5 {
-
+	font-family: 'Signika', sans-serif;
+	font-size: 2.6em;
 }
 
 h6 {
-
+	font-family: 'Fresca', sans-serif;
+	font-size: 2em;
+	color: black;
+	padding: 2% 0;
 }
 
 p {
-
+	font-family: 'Fresca', sans-serif;
+	font-size: 1.5em;
 }
 
 hr {
-
+	width: 100%;
 }
 
 span {
@@ -68,6 +82,37 @@ label {
 	font-size: 1.7em;
 	vertical-align: middle;
 	z-index: 999;
+}
+
+td label {
+	display: block;
+	font-size: 3em;
+	text-transform: uppercase;
+}
+
+table {
+	border-collapse: collapse;
+    border-spacing: 0;
+    text-align: center;
+    margin: 0 auto 37px;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.66);
+}
+
+tr {
+
+}
+
+td {
+	padding: 4.8%;
+}
+
+input {
+	height: 40px;
+}
+
+.center {
+	text-align: center;
 }
 
 .clearfix:after {
@@ -87,7 +132,7 @@ label {
 	font-weight: bolder;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 1.2em;
+	font-size: 18px;
 	float: right;
 	padding: 1%;
 	display: block;
@@ -165,33 +210,71 @@ label {
 	background-color: #D6D0D0;
 }
 
-.roundcorn {
+.blknav {
+	background-color: white;
+}
+
+.blknav .navlinks {
+	color: black;
+}
+
+.blknav .dropbtn {
+	color: black;
+}
+
+.logocent {
+	margin: 4% auto;
+	width: 80%;
+	background-color: rgba(255, 255, 255, 0.90);
 	border-radius: 25px;
-	border: 20px solid white;
-	border-style: double;
-	background-color: #8c1821;
-	padding: 20px;
-	width: 30%;
-	height: 200px;
-	margin: 50px;
+	border: 20px solid #8c1821;
+    border-style: double;
+}
+
+.body_sections {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 28px 0 15px;
+    background-color: rgba(255, 255, 255, 0.44);
+}
+
+.roundcorn {
+    border-radius: 25px;
+    border: 20px solid white;
+    border-style: double;
+    background-color: #8c1821;
+    padding: 20px;
+    width: 100%;
+    height: 268px;
+    margin: 5% 0;
 }
 
 .dcont {
 	position: relative;
 }
 
-.roundcorn h2, h6 {
+.white {
 	color: white;
+	padding-top: 0;
+    text-align: center;
+    font-family: 'Signika', sans-serif;
 }
 
 .menu {
-	width: 40%;
+	width: 100%;
 	margin: auto;
+}
+
+.tele {
+	font-family: 'BioRhyme Expanded', serif;
+	font-size: 3em;
+	text-align: center;
 }
 
 .bignavwd {
     display: inline-block;
-    margin: 23% 5%;
+    margin: 23% 5% 0;
     font-family: 'BioRhyme Expanded', serif;
     text-transform: uppercase;
     font-size: 4.5em;
@@ -204,6 +287,23 @@ label {
 	height: 3px;
 	background: #FFF;
 	margin: 2px 0;
+}
+
+.mencol {
+	width: 25%;
+	display: inline-block;
+	margin: 0 3.5%;
+}
+
+.colleft {
+	float: left;
+}
+
+.colmid {
+	margin: 0 5.5%;
+}
+.colright {
+	float: right;
 }
 
 #toggle {
@@ -239,6 +339,112 @@ label {
 	background-repeat: no-repeat;	
 }
 
+#menlog {
+	width: 50%;
+	margin: auto;
+}
+
+#menlog img {
+	width: 100%;
+}
+
+#lower {
+	margin-top: 9%;
+}
+
+#moemen {
+	color: #b20837;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2% 0;
+    font-size: 1.8em;
+}
+
+#menupg {
+	background: url("../images/MOESPICFRONT.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;	
+}
+
+#footlog img {
+	width: 100%;
+}
+
+#foottel {
+	float: right;
+	margin-top: 80px;
+}
+
+#contactpg {
+	background: url(../images/contactbkgd.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#contact {
+	text-align: center;
+}
+
+#nodesk {
+	display: none;
+}
+
+@media only screen and (max-width: 2200px) {
+	body {
+		font-size: 12px;
+	}
+	.roundcorn {
+		height: 212px;
+	}
+}
+
+@media only screen and (max-width: 1900px) {
+	body {
+		font-size: 10px;
+	}
+	.mencol {
+		width: 29%;
+		margin: 0 1%;
+	}
+	.colmid	{
+		margin: 0 4%
+	}
+	.roundcorn {
+		height: 182px;
+	}
+}
+
+@media only screen and (max-width: 1500px) {
+	body {
+		font-size: 8px;
+	}
+}
+
+@media only screen and (max-width: 1100px)  {
+	body {
+		font-size: 10px;
+	}
+	.mencol {
+		display: block;
+		width: 70%;
+		margin: auto;
+	}
+	.colleft {
+		float: none;
+	}
+	.colright {
+		float: none;
+	}
+	#nodesk {
+		display: block;
+		width: 70%;
+		margin: auto;
+	}
+	#nomobile {
+		display: none;
+	}
+}
+
 @media only screen and (max-width: 900px) {
 	label {
 		display: block;
@@ -258,3 +464,27 @@ label {
 		display: block;
 	}	
 }	
+
+@media only screen and (max-width: 650px) {
+	.roundcorn {
+		height: 204px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		font-size: 8px;
+	}
+	.mencol {
+		width: 85%;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	body {
+		font-size: 6px;
+	}
+	.roundcorn {
+		height: 176px;
+	}
+}
