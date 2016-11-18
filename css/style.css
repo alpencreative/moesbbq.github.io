@@ -44,7 +44,10 @@ h2 {
 }
 
 h3 {
-
+	text-transform: uppercase;
+	font-family: 'Fresca', sans-serif;
+	font-size: 2.3em;
+	color: white;
 }
 
 h4 {
@@ -88,6 +91,7 @@ td label {
 	display: block;
 	font-size: 3em;
 	text-transform: uppercase;
+	min-width: 140px;
 }
 
 table {
@@ -274,12 +278,12 @@ input {
 
 .bignavwd {
     display: inline-block;
-    margin: 23% 5% 0;
+    margin: 0 5%;
     font-family: 'BioRhyme Expanded', serif;
     text-transform: uppercase;
     font-size: 4.5em;
     color: white;
-    background: rgba(108, 109, 109, 0.63);
+/*    background: rgba(108, 109, 109, 0.63);*/
 }
 
 .line {
@@ -389,6 +393,27 @@ input {
 	display: none;
 }
 
+#landlogo {
+	width: 50%;
+	margin: auto;
+	padding-top: 14%;
+}
+
+#landlogo img {
+	width: 100%;
+}
+
+#address {
+	margin-top: 4%;
+	text-align: center;
+}
+
+#landbkg {
+	background-color: white;
+	width: 60%;
+	margin: auto;
+}
+
 @media only screen and (max-width: 2200px) {
 	body {
 		font-size: 12px;
@@ -417,6 +442,18 @@ input {
 @media only screen and (max-width: 1500px) {
 	body {
 		font-size: 8px;
+	}
+	table {
+		width: 90%;
+	}
+	td {
+		padding: 3%;
+	}
+	td label {
+		font-size: 2em;
+	}
+	#landing {
+		height: 771px;
 	}
 }
 
