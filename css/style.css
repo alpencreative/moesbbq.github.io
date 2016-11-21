@@ -44,11 +44,17 @@ h2 {
 }
 
 h3 {
-
+	text-transform: uppercase;
+	font-family: 'BioRhyme Expanded', serif;
+	font-size: 1.5em;
+	color: white;
+	letter-spacing: 0.3em;
 }
 
 h4 {
-
+	font-family: 'Fresca', sans-serif;
+	font-size: 1.3em;
+	padding-top: 4%;
 }
 
 h5 {
@@ -88,6 +94,7 @@ td label {
 	display: block;
 	font-size: 3em;
 	text-transform: uppercase;
+	min-width: 140px;
 }
 
 table {
@@ -232,7 +239,7 @@ input {
 }
 
 .body_sections {
-    width: 50%;
+    width: 70%;
     margin: auto;
     text-align: center;
     padding: 28px 0 15px;
@@ -252,6 +259,10 @@ input {
 
 .dcont {
 	position: relative;
+}
+
+.inputbox {
+	width: 90%;
 }
 
 .white {
@@ -274,18 +285,22 @@ input {
 
 .bignavwd {
     display: inline-block;
-    margin: 23% 5% 0;
+    margin: 5%;
     font-family: 'BioRhyme Expanded', serif;
     text-transform: uppercase;
-    font-size: 4.5em;
-    color: white;
-    background: rgba(108, 109, 109, 0.63);
+    font-size: 4em;
+    color: black;
+}
+
+.bignavwd:hover {
+	text-decoration: underline;
+	color: #b20837;
 }
 
 .line {
 	width: 20px;
 	height: 3px;
-	background: #FFF;
+	background: #060606;
 	margin: 2px 0;
 }
 
@@ -304,6 +319,16 @@ input {
 }
 .colright {
 	float: right;
+}
+
+.cinqwds {
+	text-align: center;
+	width: 65%;
+    margin: auto;
+}
+
+.cinqwds img {
+	width: 50%;
 }
 
 #toggle {
@@ -333,7 +358,7 @@ input {
 	background-repeat: no-repeat;
 }
 
-#listen:hover #landing {
+#listen:hover  #landing {
 	background: url("../images/1hwT1KhPHnAPivA7idnxHC9jdtunWYYxdTQq3g3dOKU.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat;	
@@ -389,6 +414,44 @@ input {
 	display: none;
 }
 
+#landlogo {
+	width: 60%;
+	margin: auto;
+}
+
+#landlogo img {
+	width: 100%;
+}
+
+#address {
+	text-align: center;
+	padding-bottom: 33px;
+	font-style: italic;
+}
+
+#address h3 {
+	color: #b20837;
+}
+
+#landbkg {
+	padding-top: 10%;
+}
+
+#whitelandbkg {
+    border-radius: 25px;
+	background-color: rgba(255, 255, 255, 0.76);
+	width: 75%;
+	margin: auto;
+}
+
+#cinq {
+	padding-top: 5%;
+}
+
+#smlwds p{
+	font-size: .5em;
+}
+
 @media only screen and (max-width: 2200px) {
 	body {
 		font-size: 12px;
@@ -418,6 +481,18 @@ input {
 	body {
 		font-size: 8px;
 	}
+	table {
+		width: 90%;
+	}
+	td {
+		padding: 3%;
+	}
+	td label {
+		font-size: 2em;
+	}
+	#landing {
+		height: 771px;
+	}
 }
 
 @media only screen and (max-width: 1100px)  {
@@ -434,14 +509,19 @@ input {
 	}
 	.colright {
 		float: none;
+	}	
+	.bignavwd {
+		margin: 3%;
+		font-size: 3.5em;
 	}
-	#nodesk {
-		display: block;
-		width: 70%;
-		margin: auto;
+	#address h3 {
+		font-size: 1.3em;
 	}
-	#nomobile {
-		display: none;
+}
+
+@media only screen and (max-width: 1000px)  {
+	.bignavwd {
+		font-size: 2.5em;
 	}
 }
 
@@ -457,12 +537,24 @@ input {
 		clear:both;
 		background-image: none;
 	}
+	td {
+		padding: 1%;
+		vertical-align: middle;
+	}
 	#toggle:checked + .container nav {	
 		display: block;
 	}
 	.mobile_toggle {
 		display: block;
 	}	
+	#nodesk {
+		display: block;
+		width: 70%;
+		margin: auto;
+	}
+	#nomobile {
+		display: none;
+	}
 }	
 
 @media only screen and (max-width: 650px) {
@@ -474,6 +566,12 @@ input {
 @media only screen and (max-width: 600px) {
 	body {
 		font-size: 8px;
+	}
+	td {
+		display: block;
+	}
+	td label {
+		float: none;
 	}
 	.mencol {
 		width: 85%;
