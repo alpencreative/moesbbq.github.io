@@ -45,10 +45,16 @@ h2 {
 
 h3 {
 	text-transform: uppercase;
+<<<<<<< HEAD
 	font-family: 'BioRhyme Expanded', serif;
 	font-size: 1.5em;
 	color: white;
 	letter-spacing: 0.3em;
+=======
+	font-family: 'Fresca', sans-serif;
+	font-size: 2.3em;
+	color: white;
+>>>>>>> origin/master
 }
 
 h4 {
@@ -285,6 +291,7 @@ input {
 
 .bignavwd {
     display: inline-block;
+<<<<<<< HEAD
     margin: 5%;
     font-family: 'BioRhyme Expanded', serif;
     text-transform: uppercase;
@@ -295,6 +302,14 @@ input {
 .bignavwd:hover {
 	text-decoration: underline;
 	color: #b20837;
+=======
+    margin: 0 5%;
+    font-family: 'BioRhyme Expanded', serif;
+    text-transform: uppercase;
+    font-size: 4.5em;
+    color: white;
+/*    background: rgba(108, 109, 109, 0.63);*/
+>>>>>>> origin/master
 }
 
 .line {
@@ -415,8 +430,14 @@ input {
 }
 
 #landlogo {
+<<<<<<< HEAD
 	width: 60%;
 	margin: auto;
+=======
+	width: 50%;
+	margin: auto;
+	padding-top: 14%;
+>>>>>>> origin/master
 }
 
 #landlogo img {
@@ -424,6 +445,7 @@ input {
 }
 
 #address {
+<<<<<<< HEAD
 	text-align: center;
 	padding-bottom: 33px;
 	font-style: italic;
@@ -452,6 +474,18 @@ input {
 	font-size: .5em;
 }
 
+=======
+	margin-top: 4%;
+	text-align: center;
+}
+
+#landbkg {
+	background-color: white;
+	width: 60%;
+	margin: auto;
+}
+
+>>>>>>> origin/master
 @media only screen and (max-width: 2200px) {
 	body {
 		font-size: 12px;
