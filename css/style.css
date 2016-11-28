@@ -20,6 +20,10 @@ header {
 	z-index: 999;
 }
 
+nav {
+	background-color: black;
+}
+
 footer {
 	background-color: white;
 }
@@ -45,22 +49,17 @@ h2 {
 
 h3 {
 	text-transform: uppercase;
-<<<<<<< HEAD
 	font-family: 'BioRhyme Expanded', serif;
 	font-size: 1.5em;
 	color: white;
 	letter-spacing: 0.3em;
-=======
-	font-family: 'Fresca', sans-serif;
-	font-size: 2.3em;
-	color: white;
->>>>>>> origin/master
 }
 
 h4 {
 	font-family: 'Fresca', sans-serif;
-	font-size: 1.3em;
+	font-size: 2.3em;
 	padding-top: 4%;
+	text-align: center;
 }
 
 h5 {
@@ -113,7 +112,7 @@ table {
 }
 
 tr {
-
+	vertical-align: middle;
 }
 
 td {
@@ -122,6 +121,11 @@ td {
 
 input {
 	height: 40px;
+}
+
+option {
+	display: block;
+	font-family: 'Fresca', sans-serif;
 }
 
 .center {
@@ -271,13 +275,6 @@ input {
 	width: 90%;
 }
 
-.white {
-	color: white;
-	padding-top: 0;
-    text-align: center;
-    font-family: 'Signika', sans-serif;
-}
-
 .menu {
 	width: 100%;
 	margin: auto;
@@ -291,32 +288,39 @@ input {
 
 .bignavwd {
     display: inline-block;
-<<<<<<< HEAD
-    margin: 5%;
+    margin: 4%;
     font-family: 'BioRhyme Expanded', serif;
     text-transform: uppercase;
     font-size: 4em;
     color: black;
 }
 
+.topspace {
+	margin-top: 5%;
+}
+
+.topspace h1 {
+	color: white;
+	text-align: center;
+}
+
 .bignavwd:hover {
 	text-decoration: underline;
 	color: #b20837;
-=======
-    margin: 0 5%;
-    font-family: 'BioRhyme Expanded', serif;
-    text-transform: uppercase;
-    font-size: 4.5em;
-    color: white;
-/*    background: rgba(108, 109, 109, 0.63);*/
->>>>>>> origin/master
 }
 
 .line {
-	width: 20px;
+	width: 30px;
 	height: 3px;
 	background: #060606;
-	margin: 2px 0;
+	margin: 4px 0;
+}
+
+.white {
+	color: white;
+	padding-top: 0;
+    text-align: center;
+    font-family: 'Signika', sans-serif;
 }
 
 .mencol {
@@ -336,14 +340,80 @@ input {
 	float: right;
 }
 
+.incolr {
+	padding-left: 1%;
+}
+
+.cinqwd {
+	width: 80%;
+	text-align: center;
+	margin: 5% auto;
+}
+
 .cinqwds {
 	text-align: center;
-	width: 65%;
-    margin: auto;
+	width: 75%;
+    margin: 0 auto 5%;
+}
+
+.cinqwds h2 {
+	font-size: 3.3em;
+}
+
+.cinqwds h4 {
+	text-align: left;
+}
+
+.cinqwds p {
+	text-align: left;
 }
 
 .cinqwds img {
-	width: 50%;
+	width: 40%;
+}
+
+.col {
+	width: 45%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.col p {
+	text-align: left;
+}
+
+.incol {
+	display: inline-block;
+	width: 40%;
+} 
+
+.incol p {
+	text-align: center;
+}
+
+.whiteline {
+	background-color: white;
+}
+
+.catinfo {
+	margin: 0 auto;
+}
+
+.catinfo p {
+	text-align: center;
+}
+
+.ala {
+	padding-top: 2%;
+	width: 30%;
+}
+
+.datespan {
+	float: none;
+}
+
+.nodesk {
+	display: none;
 }
 
 #toggle {
@@ -353,6 +423,29 @@ input {
 #bglandwds {
 	margin: auto;
 	text-align: center;
+}
+
+#barnbkg {
+	background: url(../images/barnside.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+}
+
+#barnbkg h1 {
+	color: white;
+	text-align: center;
+	padding: 4%;
+}
+
+#barnbkg p {
+	color: white;
+	font-size: 3em;
+	padding: 5% 0;
+}
+
+#barnbkg a {
+	color: white;
 }
 
 #landing {
@@ -425,38 +518,46 @@ input {
 	text-align: center;
 }
 
+#center {
+	text-align: center;
+}
+
 #nodesk {
 	display: none;
 }
 
 #landlogo {
-<<<<<<< HEAD
-	width: 60%;
-	margin: auto;
-=======
 	width: 50%;
 	margin: auto;
-	padding-top: 14%;
->>>>>>> origin/master
 }
 
 #landlogo img {
 	width: 100%;
 }
 
+#question17_dt {
+	width: 40%;
+}
+
+#question17_h {
+	width: 10%;
+}
+
+#question17_m {
+	width: 10%;
+}
+
+#question17_a {
+	width: 10%;
+}
+
 #address {
-<<<<<<< HEAD
 	text-align: center;
 	padding-bottom: 33px;
-	font-style: italic;
 }
 
 #address h3 {
 	color: #b20837;
-}
-
-#landbkg {
-	padding-top: 10%;
 }
 
 #whitelandbkg {
@@ -471,21 +572,49 @@ input {
 }
 
 #smlwds p{
-	font-size: .5em;
-}
-
-=======
-	margin-top: 4%;
-	text-align: center;
+	font-size: 1em;
 }
 
 #landbkg {
-	background-color: white;
-	width: 60%;
+	width: 80%;
 	margin: auto;
+	padding-top: 12%;
 }
 
->>>>>>> origin/master
+#colpad {
+	padding: 0 7%;
+}
+
+#catercontact {
+	width: 70%;
+	margin: auto;
+	background-color: #b7b7b7;
+    padding: 2%;
+}
+
+#catercontact td {
+	padding: .8%;
+}
+
+#question20 {
+	width: 90%;
+	height: 35px;
+}
+
+#event {
+	background:	url(../images/DJCrowd_1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#eventinfo {
+	margin: 1% 10%;
+}
+
+#blkbkg {
+	background-color: black;
+}
+
 @media only screen and (max-width: 2200px) {
 	body {
 		font-size: 12px;
@@ -509,6 +638,15 @@ input {
 	.roundcorn {
 		height: 182px;
 	}
+	.cinqwds p {
+		font-size: 2.5em;
+	}
+	.cinqwds h4 {
+		font-size: 3.3em;
+	}
+	.col p {
+		font-size: 2.4em;
+	}
 }
 
 @media only screen and (max-width: 1500px) {
@@ -526,6 +664,21 @@ input {
 	}
 	#landing {
 		height: 771px;
+	}
+	.cinqwd {
+		width: 100%;
+	}
+	.cinqwds {
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.bignavwd {
+		margin: 3%;
+	}
+	#colpad {
+		padding: 0 3%;
 	}
 }
 
@@ -548,14 +701,54 @@ input {
 		margin: 3%;
 		font-size: 3.5em;
 	}
+	.cinqwds p {
+		font-size: 2em;
+	}
+	.cinqwds h4 {
+		font-size: 2.3em;
+	}
+	.col p {
+		font-size: 1.7em;
+	}
 	#address h3 {
 		font-size: 1.3em;
+	}
+	#whitelandbkg {
+		width: 100%;
 	}
 }
 
 @media only screen and (max-width: 1000px)  {
 	.bignavwd {
 		font-size: 2.5em;
+	}
+	.cinqwds p {
+		width: 70%;
+	}
+	.ala p {
+		width: 50%;
+		margin: auto;
+	}
+	.col {
+		width: 85%;
+		display: block;
+		margin: 2% auto;
+	}
+	.col p {
+		font-size: 2em;
+	}
+	#whitelandbkg {
+		width: 95%;
+	}
+	#barnbkg p {
+		font-size: 2em;
+		margin: auto;
+	}
+	#center {
+		width: 100%;
+	}
+	#des p {
+		margin: auto;
 	}
 }
 
@@ -577,10 +770,22 @@ input {
 	}
 	#toggle:checked + .container nav {	
 		display: block;
+		background-color: white;
+	}
+	#toggle:checked + .container nav .navlinks {
+		width: 100%;
+		color: black;
+	} 
+	#toggle:checked + .container nav .nodesk {
+		display: block;
+		color: black;
 	}
 	.mobile_toggle {
 		display: block;
 	}	
+	.dropdown {
+		padding: 0;
+	}
 	#nodesk {
 		display: block;
 		width: 70%;
@@ -591,9 +796,25 @@ input {
 	}
 }	
 
+@media only screen and (max-width: 800px) {
+	.topspace {
+		margin-top: 10%;
+	}
+	.cinqwds {
+		width: 95%;
+	}
+	#cinq {
+		padding-top: 10%;
+	}
+}
+
 @media only screen and (max-width: 650px) {
 	.roundcorn {
 		height: 204px;
+	}
+	.bignavwd {
+		display: block;
+		margin: 6%;
 	}
 }
 
@@ -609,6 +830,12 @@ input {
 	}
 	.mencol {
 		width: 85%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.topspace {
+		margin-top: 18%;
 	}
 }
 

@@ -2,7 +2,7 @@
 if(isset($_POST['email'])) {
      
     // CHANGE THE TWO LINES BELOW
-    $email_to = "abigail@moesoriginalbbq.com";
+    $email_to = "katie@alpencreative.com";
      
     $email_subject = "contact from website";
      
@@ -23,7 +23,7 @@ if(isset($_POST['email'])) {
         !isset($_POST['city_name']) ||
         !isset($_POST['state_name']) ||
         !isset($_POST['zip_code']) ||
-        !isset($_POST['date(format)']) ||
+        !isset($_POST['question17_dt']) ||
         !isset($_POST['time(oid)']) ||
         !isset($_POST['number']) ||
         !isset($_POST['budget']) ||
@@ -44,7 +44,7 @@ if(isset($_POST['email'])) {
     $email_from = $_POST['city_name']; // required    
     $email_from = $_POST['state_name']; // required    
     $email_from = $_POST['zip_code']; // required    
-    $email_from = $_POST['date(format)']; // required    
+    $email_from = $_POST['question17_dt']; // required    
     $email_from = $_POST['time(oid)']; // not required    
     $email_from = $_POST['number']; // not required  
     $email_from = $_POST['budget']; // not required  
@@ -52,9 +52,6 @@ if(isset($_POST['email'])) {
     $email_from = $_POST['event_type']; // not required  
     $email_from = $_POST['organization_name']; // not required  
     $email_from = $_POST['contact_preference']; // required  
-
-
-
     $email_from = $_POST['email']; // required
     $telephone = $_POST['telephone']; // not required
     $comments = $_POST['comments']; // required
@@ -90,8 +87,8 @@ if(isset($_POST['email'])) {
     $email_message .= "City: ".clean_string($city_name)."\n";     
     $email_message .= "State/Province: ".clean_string($state_name)."\n";         
     $email_message .= "Zip Code: ".clean_string($zip_code)."\n";         
-    $email_message .= "Date: ".clean_string($date)."\n";         
-    $email_message .= "Time: ".clean_string($time)."\n";         
+    $email_message .= "Date: ".clean_string($question17_dt)."\n";         
+    $email_message .= "Time: ".clean_string($question17_h):($question17_m)($question17_a)."\n";         
     $email_message .= "Number of Attendees: ".clean_string($number)."\n"; 
     $email_message .= "Budget: ".clean_string($budget)."\n";         
     $email_message .= "Level of Service: ".clean_string($service_name)."\n";         
