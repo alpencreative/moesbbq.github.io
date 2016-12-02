@@ -21,7 +21,7 @@ header {
 }
 
 nav {
-	background-color: black;
+/*	background-color: black;*/
 }
 
 footer {
@@ -116,7 +116,7 @@ tr {
 }
 
 td {
-	padding: 4.8%;
+	padding: 2.8%;
 }
 
 input {
@@ -153,6 +153,7 @@ option {
 	float: right;
 	padding: 1%;
 	display: block;
+	min-width: 100px;
 /*	-webkit-transition: 0.2s;
 	-moz-transition: 0.2s;
 	-ms-transition: 0.2s;
@@ -209,7 +210,7 @@ option {
 
 .dropdown-content a {
 	color: black;
-	padding: 12px 16px;
+	padding: 12px 0;
 	text-decoration: none;
 	display: block;
 }
@@ -288,7 +289,7 @@ option {
 
 .bignavwd {
     display: inline-block;
-    margin: 4%;
+    margin: 3%;
     font-family: 'BioRhyme Expanded', serif;
     text-transform: uppercase;
     font-size: 4em;
@@ -414,6 +415,7 @@ option {
 
 .nodesk {
 	display: none;
+	padding: 8%;
 }
 
 #toggle {
@@ -425,7 +427,7 @@ option {
 	text-align: center;
 }
 
-#barnbkg {
+.barnbkg {
 	background: url(../images/barnside.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -563,7 +565,7 @@ option {
 #whitelandbkg {
     border-radius: 25px;
 	background-color: rgba(255, 255, 255, 0.76);
-	width: 75%;
+	width: 90%;
 	margin: auto;
 }
 
@@ -602,7 +604,7 @@ option {
 }
 
 #event {
-	background:	url(../images/DJCrowd_1.jpg);
+	background:	url(../images/f5yAhDC2bn_GElKBlZYEg403TUCAJdFULsJxFer5TUA,KEZysIka-wOyfIJ7lNTSYUV-hQSc3fRWtgpVFacE2sA,5VVDl_Z_bpw0zaCU__cXcM7K-99H0mzCVRHP8Hjoc_4.jpeg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -614,6 +616,12 @@ option {
 #blkbkg {
 	background-color: black;
 }
+
+#blkbkgd {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+#woodbkg
 
 @media only screen and (max-width: 2200px) {
 	body {
@@ -785,6 +793,11 @@ option {
 	}	
 	.dropdown {
 		padding: 0;
+	}
+	.bignavwd {
+		font-size: 4.5em;
+	    display: block;
+	    padding: 4%;
 	}
 	#nodesk {
 		display: block;
