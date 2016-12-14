@@ -6,6 +6,28 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 
+	<script src="js/classie.js"></script>
+	<script>
+	    function init() {
+	        window.addEventListener('scroll', function(e){
+	            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+	                colorOn = 50,
+	                header = document.querySelector("header"),
+	                navlinks = document.querySelector("nav");
+	            if (distanceY > colorOn) {
+	                classie.add(header,"color")
+	                classie.add(navlinks,"darkentext");
+	            } else {
+	                if (classie.has(header,"color")) {
+	                    classie.remove(header,"color");
+	                    classie.remove(navlinks,"darkentext");
+	                }
+	            }
+	        });
+	    }
+	    window.onload = init();
+	</script> -->
 </head>
 <body id="menupg">
 	<header>
@@ -142,22 +164,23 @@
 			</div>
 		</div>	
 	</div>
-	<div>
-		<footer>
-			<div class="clearfix mencol colleft">
+	<footer>
+		<div class="clearfix mencol colleft">
+			<div id="footerlocation">
 				<h2>120 Grove St.</h2>
 				<h2>Tahoe City, CA</h2>
 				<h2>(Behind Tahoe Dave's)</h2>
 			</div>
-			<div class="mencol colmid">
-				<div id="footlog">
-					<img src="images/moes-bbq-large-logo.png">
-				</div>	
-			</div>
-			<div id="foottel" class="clearfix mencol">
-				<a class="tele" href="tel:+15305834227">(530) 583-4227</a>
-			</div>
-		</footer>
+		</div>
+		<div class="mencol colmid">
+			<div id="footlog">
+				<img src="images/moes-bbq-large-logo.png">
+			</div>	
+		</div>
+		<div id="foottel" class="clearfix mencol">
+			<a class="tele" href="tel:+15305834227">(530) 583-4227</a>
+		</div>
+	</footer>
 <!-- 	</div>
 		<div id="landing">
 		<div id="bglandwds">
