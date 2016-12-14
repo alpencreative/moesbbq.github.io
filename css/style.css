@@ -18,6 +18,17 @@ header {
 	top: 0;
 	left: 0;
 	z-index: 999;
+
+
+
+	-webkit-transition: background-color ease-in-out 0.3s;
+	-moz-transition: background-color ease-in-out 0.3s;
+	-ms-transition: background-color ease-in-out 0.3s;
+	-o-transition: background-color ease-in-out 0.3s;
+	transition: background-color ease-in-out 0.3s; 
+}
+header.color {
+	background-color: #FFF;
 }
 
 nav {
@@ -117,6 +128,7 @@ tr {
 
 td {
 	padding: 2.8%;
+	vertical-align: top;
 }
 
 input {
@@ -159,6 +171,9 @@ option {
 	-ms-transition: 0.2s;
 	-o-transition: 02s;
 	transition: 0.2s; */
+}
+nav.darkentext {
+	color: #333;
 }
 
 .navlinks .dropbtn {
@@ -264,7 +279,7 @@ option {
     background-color: #8c1821;
     padding: 20px;
     width: 100%;
-    height: 268px;
+    /*height: 268px;*/
     margin: 5% 0;
 }
 
@@ -283,8 +298,11 @@ option {
 
 .tele {
 	font-family: 'BioRhyme Expanded', serif;
-	font-size: 3em;
+	font-size: 2.6em;
 	text-align: center;
+}
+.teleindex {
+	color: #b20837;
 }
 
 .bignavwd {
@@ -334,6 +352,7 @@ option {
 	float: left;
 }
 
+
 .colmid {
 	margin: 0 5.5%;
 }
@@ -369,7 +388,7 @@ option {
 	text-align: left;
 }
 
-.cinqwds img {
+.catinfo img {
 	width: 40%;
 }
 
@@ -397,7 +416,9 @@ option {
 }
 
 .catinfo {
-	margin: 0 auto;
+	text-align: center;
+	width: 75%;
+    margin: 0 auto 5%;
 }
 
 .catinfo p {
@@ -434,19 +455,19 @@ option {
 	width: 100%;
 }
 
-#barnbkg h1 {
+.barnbkg h1 {
 	color: white;
 	text-align: center;
 	padding: 4%;
 }
 
-#barnbkg p {
+.barnbkg p {
 	color: white;
-	font-size: 3em;
+	font-size: 2em;
 	padding: 5% 0;
 }
 
-#barnbkg a {
+.barnbkg a {
 	color: white;
 }
 
@@ -476,7 +497,7 @@ option {
 
 #menlog {
 	width: 50%;
-	margin: auto;
+	margin: 10px auto;
 }
 
 #menlog img {
@@ -504,10 +525,17 @@ option {
 #footlog img {
 	width: 100%;
 }
+#footerlocation {
+	margin: 6.7%;
+}
+
+#footerlocation h2 {
+	padding: 0;
+}
 
 #foottel {
 	float: right;
-	margin-top: 80px;
+	margin-top: 60px;
 }
 
 #contactpg {
@@ -522,6 +550,8 @@ option {
 
 #center {
 	text-align: center;
+	margin: auto;
+	width: 70%;
 }
 
 #nodesk {
@@ -567,10 +597,25 @@ option {
 	background-color: rgba(255, 255, 255, 0.76);
 	width: 90%;
 	margin: auto;
+	padding: 10px;
 }
 
 #cinq {
-	padding-top: 5%;
+	padding-top: 4.1%;
+}
+
+.cinqwds h1 {
+	margin: 80px 0 20px 0;
+}
+
+#orderform {
+	text-align: center;
+}
+
+#orderformp {
+	font-size: 2em;
+	text-align: center;
+	padding: 20px;
 }
 
 #smlwds p{
@@ -655,6 +700,15 @@ option {
 	.col p {
 		font-size: 2.4em;
 	}
+	#footerlocation {
+		margin: 10.5%;
+	}
+}
+
+@media only screen and (max-width: 1700px) {
+	#footerlocation {
+		margin: 9.5%;
+	}
 }
 
 @media only screen and (max-width: 1500px) {
@@ -671,13 +725,16 @@ option {
 		font-size: 2em;
 	}
 	#landing {
-		height: 771px;
+		height: 100vh;
 	}
 	.cinqwd {
 		width: 100%;
 	}
 	.cinqwds {
 		width: 90%;
+	}
+	.ala {
+		width: 30%;
 	}
 }
 
@@ -718,11 +775,28 @@ option {
 	.col p {
 		font-size: 1.7em;
 	}
+	.roundcorn {
+		height: inherit;
+	}
+	.ala {
+		width: 50%;
+	}
 	#address h3 {
 		font-size: 1.3em;
 	}
 	#whitelandbkg {
 		width: 100%;
+	}
+	#foottel {
+		float: none;
+		margin: 0 auto;
+		text-align: center;
+		padding: 20px;
+	}
+	#footerlocation {
+		margin: 0 auto;
+		text-align: center;
+		padding: 20px;
 	}
 }
 
@@ -732,6 +806,7 @@ option {
 	}
 	.cinqwds p {
 		width: 70%;
+		text-align: left;
 	}
 	.ala p {
 		width: 50%;
@@ -744,6 +819,9 @@ option {
 	}
 	.col p {
 		font-size: 2em;
+	}
+	#catercontact {
+		width: 90%;
 	}
 	#whitelandbkg {
 		width: 95%;
@@ -776,9 +854,18 @@ option {
 		padding: 1%;
 		vertical-align: middle;
 	}
+	#toggle:checked + .container {
+		background-color: white;
+
+		-webkit-transition: background-color ease-in-out 0.1s;
+		-moz-transition: background-color ease-in-out 0.1s;
+		-ms-transition: background-color ease-in-out 0.1s;
+		-o-transition: background-color ease-in-out 0.1s;
+		transition: background-color ease-in-out 0.1s;
+	}
 	#toggle:checked + .container nav {	
 		display: block;
-		background-color: white;
+		/*background-color: white;*/
 	}
 	#toggle:checked + .container nav .navlinks {
 		width: 100%;
@@ -791,6 +878,10 @@ option {
 	.mobile_toggle {
 		display: block;
 	}	
+	.nodesk {
+		width: 100%;
+		padding: 20px;
+	}
 	.dropdown {
 		padding: 0;
 	}
@@ -799,35 +890,56 @@ option {
 	    display: block;
 	    padding: 4%;
 	}
+	#cinq {
+		padding-top: 59px;
+	}
 	#nodesk {
 		display: block;
 		width: 70%;
 		margin: auto;
+		padding: 30px;
+	}
+	#nodesk h1 {
+		padding: 5px;
+	}
+	#menlog {
+		padding: 5px;
 	}
 	#nomobile {
 		display: none;
+	}
+	#landing {
+
+	background: url("../images/MOESPICFRONTmobile.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
 	}
 }	
 
 @media only screen and (max-width: 800px) {
 	.topspace {
-		margin-top: 10%;
+		margin-top: 59px;
 	}
 	.cinqwds {
-		width: 95%;
+		width: 90%;
 	}
-	#cinq {
-		padding-top: 10%;
+	#menlog {
+		width: 70%;
 	}
 }
 
 @media only screen and (max-width: 650px) {
-	.roundcorn {
-		height: 204px;
-	}
 	.bignavwd {
 		display: block;
 		margin: 6%;
+	}
+	.catinfo img {
+		width: 80%;
+	}
+	#landlogo {
+		width: 80%;
 	}
 }
 
@@ -844,11 +956,55 @@ option {
 	.mencol {
 		width: 85%;
 	}
+	.logocent {
+		width: 90%;
+	}
+	.cinqwd {
+		margin: 0 auto;
+	}
+	.cinqwd h5 {
+		margin: 10px;
+	}
+	.cinqwds h5 {
+		margin: 10px;
+	}
+	.cinqwds h1 {
+		margin: 40px 0 20px 0;
+	}
+	.topspace h1 {
+		padding: 30px 10px;
+	}
+	#eventinfo {
+		margin: 0 3% 3% 3%;
+	}
+	#catercontact {
+		width: 100%;
+	}
+	#landbkg {
+		padding-top: 20%;
+	}
+	#orderform {
+		margin: 0 auto;
+		padding-top: 30px;
+		width: 90%;
+	}
+	#nodesk {
+		display: block;
+		width: 90%;
+		margin: auto;
+		padding: 0 30px;
+	}
 }
 
 @media only screen and (max-width: 500px) {
 	.topspace {
 		margin-top: 18%;
+	}
+	#menlog {
+		width: 90%;
+	}
+	#landbkg {
+		padding-top: 30%;
 	}
 }
 
@@ -856,7 +1012,7 @@ option {
 	body {
 		font-size: 6px;
 	}
-	.roundcorn {
-		height: 176px;
+	#landbkg {
+		padding-top: 40%;
 	}
 }
