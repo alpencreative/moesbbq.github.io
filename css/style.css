@@ -32,11 +32,12 @@ header.color {
 }
 
 nav {
-/*	background-color: black;*/
+	text-align: center;
 }
 
 footer {
-	background-color: white;
+	background-color: black;
+	height: 300px;
 }
 
 a {
@@ -154,23 +155,18 @@ option {
 }
 
 .navlinks {
-	font-family: 'Fresca', sans-serif;
-	text-align: center;	
-	list-style-type: none;
-	color: white;
-	font-weight: bolder;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-size: 18px;
-	float: right;
-	padding: 1%;
-	display: block;
-	min-width: 100px;
-/*	-webkit-transition: 0.2s;
-	-moz-transition: 0.2s;
-	-ms-transition: 0.2s;
-	-o-transition: 02s;
-	transition: 0.2s; */
+    font-family: 'Fresca', sans-serif;
+    text-align: center;
+    list-style-type: none;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 4em;
+    vertical-align: middle;
+    display: inline-block;
+    min-width: 100px;
+    width: 350px;
 }
 nav.darkentext {
 	color: #333;
@@ -204,7 +200,7 @@ nav.darkentext {
     font-weight: bolder;
     text-decoration: none;
     text-transform: uppercase;
-    min-width: 100px;
+	width: 350px;
 }
 
 .dropdown {
@@ -221,6 +217,8 @@ nav.darkentext {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 0;
     z-index: 1;
+    width: 350px;
+    text-align: center;
 }
 
 .dropdown-content a {
@@ -256,7 +254,16 @@ nav.darkentext {
 }
 
 .logocent {
-	margin: 4% auto;
+	margin: 7% auto;
+	width: 80%;
+	background-color: rgba(255, 255, 255, 0.90);
+	border-radius: 25px;
+	border: 20px solid #8c1821;
+    border-style: double;
+}
+
+.logocente {
+	margin: 1% auto;
 	width: 80%;
 	background-color: rgba(255, 255, 255, 0.90);
 	border-radius: 25px;
@@ -267,9 +274,14 @@ nav.darkentext {
 .body_sections {
     width: 70%;
     margin: auto;
+    margin-bottom: 1%;
     text-align: center;
-    padding: 28px 0 15px;
+    padding: 3% 0 0;
     background-color: rgba(255, 255, 255, 0.44);
+}
+
+.contact {
+	padding-bottom: 2%;
 }
 
 .roundcorn {
@@ -285,6 +297,9 @@ nav.darkentext {
 
 .dcont {
 	position: relative;
+	font-size: .5em;
+	width: 350px;
+	text-align: center;
 }
 
 .inputbox {
@@ -315,12 +330,13 @@ nav.darkentext {
 }
 
 .topspace {
-	margin-top: 5%;
-}
-
-.topspace h1 {
+	margin-top: 6%;
 	color: white;
 	text-align: center;
+}
+
+.topspace a {
+	color: white;
 }
 
 .bignavwd:hover {
@@ -418,7 +434,7 @@ nav.darkentext {
 .catinfo {
 	text-align: center;
 	width: 75%;
-    margin: 0 auto 5%;
+    margin: 0 auto;
 }
 
 .catinfo p {
@@ -446,12 +462,11 @@ nav.darkentext {
 #bglandwds {
 	margin: auto;
 	text-align: center;
+	padding: 2%;
 }
 
 .barnbkg {
-	background: url(../images/barnside.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-color: rgba(117, 117, 117, 0.43);
 	width: 100%;
 }
 
@@ -471,28 +486,15 @@ nav.darkentext {
 	color: white;
 }
 
+.socpad {
+	margin: .5%;
+}
+
 #landing {
 	background: url("../images/MOESPICFRONT.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 1200px;
-}
-
-#eat:hover #landing {
-	background: url();
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-#drink:hover #landing {
-	background: url("../images/IMG_1231.JPG");
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-#listen:hover  #landing {
-	background: url("../images/1hwT1KhPHnAPivA7idnxHC9jdtunWYYxdTQq3g3dOKU.jpeg");
-	background-size: cover;
-	background-repeat: no-repeat;	
 }
 
 #menlog {
@@ -502,6 +504,43 @@ nav.darkentext {
 
 #menlog img {
 	width: 100%;
+}
+
+#footer_copyright {
+    text-align: center;
+    height: 47px;
+    clear: both;
+    color: white;
+    padding-bottom: 1%;
+}
+
+#acwords {
+	font-size: 1em;
+	color: white;
+	padding-top: 1%;
+}
+
+#aclogo {
+	width: 30px;
+}
+
+#socmed {
+	background: #b20837;
+	text-align: center;
+}
+
+#socmed img {
+	width: 45px;
+}
+
+#hours {
+	margin: 1%;
+}
+
+#hours h4{
+	color: white;
+	font-size: 1em;
+	padding-top: .2%;
 }
 
 #lower {
@@ -517,7 +556,7 @@ nav.darkentext {
 }
 
 #menupg {
-	background: url("../images/MOESPICFRONT.jpg");
+	background: url("../images/wood.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;	
 }
@@ -559,8 +598,9 @@ nav.darkentext {
 }
 
 #landlogo {
-	width: 50%;
+	width: 20%;
 	margin: auto;
+	display: inline-block;
 }
 
 #landlogo img {
@@ -583,6 +623,14 @@ nav.darkentext {
 	width: 10%;
 }
 
+#tix {
+    background-color: #b20837;
+    border-radius: 25px;
+    width: 5%;
+    margin: 1%auto;
+    padding: 0.1%;
+}
+
 #address {
 	text-align: center;
 	padding-bottom: 33px;
@@ -601,11 +649,11 @@ nav.darkentext {
 }
 
 #cinq {
-	padding-top: 4.1%;
+	padding-top: 6.1%;
 }
 
 .cinqwds h1 {
-	margin: 80px 0 20px 0;
+	margin: 1% auto;
 }
 
 #orderform {
@@ -625,7 +673,7 @@ nav.darkentext {
 #landbkg {
 	width: 80%;
 	margin: auto;
-	padding-top: 12%;
+	padding-top: 19%;
 }
 
 #colpad {
@@ -633,8 +681,8 @@ nav.darkentext {
 }
 
 #catercontact {
-	width: 70%;
-	margin: auto;
+	width: 90%;
+	margin: 0 auto 2%;
 	background-color: #b7b7b7;
     padding: 2%;
 }
@@ -663,20 +711,39 @@ nav.darkentext {
 }
 
 #blkbkgd {
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.8);
 }
 
-#woodbkg
+@media only screen and (max-width: 2400px) {
+	h1 {
+		font-size: 3.5em;
+	}
+	.body_sections {
+		padding: 4% 0 0;
+	}
+}
 
 @media only screen and (max-width: 2200px) {
 	body {
 		font-size: 12px;
 	}
+	footer {
+		height: 235px;
+	}
 	.roundcorn {
 		height: 212px;
 	}
 }
-
+ 
+@media only screen and (max-width: 2000px) {
+	.logocent {
+    	margin: 9% auto;
+	}
+	.body_sections {
+		padding: 5% 0 0;
+	}
+} 
+	
 @media only screen and (max-width: 1900px) {
 	body {
 		font-size: 10px;
@@ -703,11 +770,56 @@ nav.darkentext {
 	#footerlocation {
 		margin: 10.5%;
 	}
+	#lower {
+		margin-top: 10%;
+	}
+}
+
+@media only screen and (max-width: 1800px) {
+	.navlinks {
+		width: 300px;
+	}
+	.dropbtn {
+		width: 300px;
+	}
+	.dropdown-content {
+		width: 300px;
+	}
+	.dcont {
+		width: 300px;
+	}
+	#lower {
+		margin-top: 3%;
+	}
 }
 
 @media only screen and (max-width: 1700px) {
+	footer {
+	    height: 235px;
+	}
 	#footerlocation {
 		margin: 9.5%;
+	}
+	#hours {
+		font-size: 2em;
+	}
+}
+
+@media only screen and (max-width: 1550px) {
+	.navlinks {
+		width: 250px;
+	}
+	.dropbtn {
+		width: 250px;
+	}
+	.dropdown-content {
+		width: 250px;
+	}
+	.dcont {
+		width: 250px;
+	}
+	.roundcorn {
+		margin: 1% 0;
 	}
 }
 
@@ -724,6 +836,15 @@ nav.darkentext {
 	td label {
 		font-size: 2em;
 	}
+	.topspace {
+		margin-top: 8%;
+	}
+	.topspace p {
+		font-size: 2.5em;
+	}
+	#tix {
+		width: 10%;
+	}
 	#landing {
 		height: 100vh;
 	}
@@ -735,6 +856,27 @@ nav.darkentext {
 	}
 	.ala {
 		width: 30%;
+	}
+}
+
+@media only screen and (max-width: 1370px){
+	#landing {
+    	height: 78vh;
+	}
+}
+
+@media only screen and (max-width: 1300px) {
+	.navlinks {
+		width: 200px;
+	}
+	.dropbtn {
+		width: 200px;
+	}
+	.dropdown-content {
+		width: 200px;
+	}
+	.dcont {
+		width: 200px;
 	}
 }
 
@@ -750,6 +892,68 @@ nav.darkentext {
 @media only screen and (max-width: 1100px)  {
 	body {
 		font-size: 10px;
+	}
+	label {
+		display: block;
+		float:right;
+		padding: 15px;
+	}
+	nav{
+		display: none;
+		position: static;
+		clear:both;
+		background-image: none;
+	}
+	td {
+		padding: 1%;
+		vertical-align: middle;
+	}
+	.topspace p {
+		font-size: 2em;
+	}
+	#toggle:checked + .container {
+		background-color: black;
+
+		-webkit-transition: background-color ease-in-out 0.1s;
+		-moz-transition: background-color ease-in-out 0.1s;
+		-ms-transition: background-color ease-in-out 0.1s;
+		-o-transition: background-color ease-in-out 0.1s;
+		transition: background-color ease-in-out 0.1s;
+	}
+	#toggle:checked + .container nav {	
+		display: block;
+		/*background-color: white;*/
+	}
+	#toggle:checked + .container nav .navlinks {
+		width: 100%;
+		color: white;
+	} 
+	#toggle:checked + .container nav .nodesk {
+		display: block;
+		color: white;
+	}
+	.mobile_toggle {
+		display: block;
+	}	
+	.nodesk {
+		width: 100%;
+		padding: 20px;
+	}
+	.dropdown {
+		padding: 0;
+	}
+	.navlinks {
+		font-size: 3em;
+		width: 150px;
+	}
+	.dropbtn {
+		width: 150px;
+	}
+	.dropdown-content {
+		width: 150px;
+	}
+	.dcont {
+		width: 150px;
 	}
 	.mencol {
 		display: block;
@@ -781,6 +985,18 @@ nav.darkentext {
 	.ala {
 		width: 50%;
 	}
+	#nomobile {
+		display: none;
+	}
+	#nodesk {
+		display: block;
+		width: 70%;
+		margin: auto;
+		padding: 30px;
+	}
+	#nodesk h1 {
+		padding: 5px;
+	}
 	#address h3 {
 		font-size: 1.3em;
 	}
@@ -800,6 +1016,33 @@ nav.darkentext {
 	}
 }
 
+@media only screen and (max-width: 1050px) {
+	.body_sections {
+	    padding: 5% 0 0;
+	}
+	.body_sections h2 {
+		font-size: 5.2em;
+	}
+	#contactpg {
+		margin: 3% 0;
+	}
+	#landing {
+ 	   height: 83vh;
+	}
+}
+
+@media only screen and (max-width: 1030px) {
+	footer {
+		height: 194px;
+	}
+	#landing {
+		height: 75vh;
+	}
+	#hours {
+		font-size: 1.5em;
+	}
+}
+
 @media only screen and (max-width: 1000px)  {
 	.bignavwd {
 		font-size: 2.5em;
@@ -808,8 +1051,11 @@ nav.darkentext {
 		width: 70%;
 		text-align: left;
 	}
+	.ala {
+		width: 65%;
+	}
 	.ala p {
-		width: 50%;
+		width: 90%;
 		margin: auto;
 	}
 	.col {
@@ -819,6 +1065,14 @@ nav.darkentext {
 	}
 	.col p {
 		font-size: 2em;
+	}
+	.topspace p {
+		font-size: 1.5em;
+	    width: 80%;
+	    margin: auto;
+	}
+	.logocente {
+		width: 90%;
 	}
 	#catercontact {
 		width: 90%;
@@ -836,97 +1090,91 @@ nav.darkentext {
 	#des p {
 		margin: auto;
 	}
+	#tix {
+		width: 14%;
+		font-size: 2em;
+		padding: 1.1%;
+	}
 }
 
 @media only screen and (max-width: 900px) {
-	label {
-		display: block;
-		float:right;
-		padding: 15px;
-	}
-	nav{
-		display: none;
-		position: static;
-		clear:both;
-		background-image: none;
-	}
-	td {
-		padding: 1%;
-		vertical-align: middle;
-	}
-	#toggle:checked + .container {
-		background-color: white;
-
-		-webkit-transition: background-color ease-in-out 0.1s;
-		-moz-transition: background-color ease-in-out 0.1s;
-		-ms-transition: background-color ease-in-out 0.1s;
-		-o-transition: background-color ease-in-out 0.1s;
-		transition: background-color ease-in-out 0.1s;
-	}
-	#toggle:checked + .container nav {	
-		display: block;
-		/*background-color: white;*/
-	}
-	#toggle:checked + .container nav .navlinks {
-		width: 100%;
-		color: black;
-	} 
-	#toggle:checked + .container nav .nodesk {
-		display: block;
-		color: black;
-	}
-	.mobile_toggle {
-		display: block;
-	}	
-	.nodesk {
-		width: 100%;
-		padding: 20px;
-	}
-	.dropdown {
-		padding: 0;
-	}
 	.bignavwd {
 		font-size: 4.5em;
 	    display: block;
 	    padding: 4%;
 	}
+	.col {
+		width: 100%;
+	}
+	.cinqwds {
+		font-size: .8em;
+	}
 	#cinq {
 		padding-top: 59px;
-	}
-	#nodesk {
-		display: block;
-		width: 70%;
-		margin: auto;
-		padding: 30px;
-	}
-	#nodesk h1 {
-		padding: 5px;
 	}
 	#menlog {
 		padding: 5px;
 	}
-	#nomobile {
-		display: none;
-	}
 	#landing {
-
-	background: url("../images/MOESPICFRONTmobile.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; 
+		background: url("../images/MOESPICFRONTmobile.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+	    background-position: center; 
+	    height: 80vh;
 	}
 }	
 
 @media only screen and (max-width: 800px) {
+	footer {
+		height: 270px;
+	}
 	.topspace {
 		margin-top: 59px;
 	}
 	.cinqwds {
 		width: 90%;
 	}
+	.body_sections {
+		padding: 7% 0 0;
+	}
+	.socpad {
+		margin: 1.5%;
+	}
 	#menlog {
 		width: 70%;
+	}
+	#tix {
+		width: 20%;
+	}
+	#contactpg {
+		margin: 3% 0 13%;
+	}
+}
+
+@media only screen and (max-width: 770px) {
+	#landing {
+		height: 76vh;
+	}
+}
+
+@media only screen and (max-width: 740px) {
+	h1 {
+		font-size: 2em;
+	}
+	footer {
+		height: 200px;
+	}
+	#landbkg {
+		padding-top: 19%;
+	}
+	#landing {
+		height: 83vh;
+	}
+	#address {
+		padding-bottom: 10px;
+	}
+	#address h3 {
+		font-size: 1em;
 	}
 }
 
@@ -937,6 +1185,9 @@ nav.darkentext {
 	}
 	.catinfo img {
 		width: 80%;
+	}
+	.logocent {
+		margin: 12% auto;
 	}
 	#landlogo {
 		width: 80%;
@@ -952,6 +1203,15 @@ nav.darkentext {
 	}
 	td label {
 		float: none;
+	}
+	footer {
+		height: 210px;
+	}
+	.body_sections {
+		padding: 9% 0 0;
+	}
+	.incol {
+		width: 49%;
 	}
 	.mencol {
 		width: 85%;
@@ -997,8 +1257,17 @@ nav.darkentext {
 }
 
 @media only screen and (max-width: 500px) {
+	footer {
+		height: 182px;
+	}
+	.body_sections {
+		padding: 11% 0 0;
+	}
 	.topspace {
 		margin-top: 18%;
+	}
+	.logocent {
+		margin: 15% auto;
 	}
 	#menlog {
 		width: 90%;
@@ -1008,11 +1277,32 @@ nav.darkentext {
 	}
 }
 
+@media only screen and (max-width: 420px) {
+	#landing {
+		height: 76vh;
+	}
+}
+
 @media only screen and (max-width: 400px) {
 	body {
 		font-size: 6px;
 	}
+	.body_sections {
+		padding: 14% 0 0;
+	}
 	#landbkg {
 		padding-top: 40%;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.cinqwds h1 {
+		margin: 20px 0;
+	}
+	.logocente {
+		width: 98%;
+	}
+	.cinqwd {
+		font-size: .8em;
 	}
 }
