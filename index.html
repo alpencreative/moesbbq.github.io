@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<header>
+	<header id="blkbkgd">
 		<label class="mobile_toggle" for="toggle">
 			<div class="whiteline line"></div>
 			<div class="whiteline line"></div>
@@ -18,14 +18,7 @@
 	    
 	    <div class="container clearfix">
 	        <nav class="clearfix">
-	        	<a id="nomobile" class="navlinks" href="contact.html">Contact US</a>	
-	            <div class="dropdown navlinks">
-	            	 <button id="nomobile" class="dropbtn">Music</button>
-	            	 <div class="dropdown-content">
-	            		<a class="dcont" href="events.html">Upcoming Events</a>
-						<a class="dcont" href="lodging.html">Lodging</a>
-	            	 </div>	
-	            </div>
+	            <a id="nomobile" class="navlinks" href="menu.html">Menu</a>
 	            <div class="dropdown navlinks">
 	            	 <button id="nomobile" class="dropbtn">Catering</button>
 	            	 <div class="dropdown-content">
@@ -33,8 +26,18 @@
 						<a class="dcont" href="caterinquire.html">Inquiries</a>
 	            	 </div>	
 	            </div>
-	            <a id="nomobile" class="navlinks" href="menu.html">Menu</a>
-				<a id="nomobile" class="navlinks" href="index.html">Home</a>
+				<div id="landlogo">
+					<a id="nomobile" class="navlinks" href="index.html"><img src="images/moes-bbq-large-logo.png"></a>
+				</div>
+				<div class="dropdown navlinks">
+	            	 <button id="nomobile" class="dropbtn">Music</button>
+	            	 <div class="dropdown-content">
+	            		<a class="dcont" href="events.html">Upcoming Events</a>
+						<a class="dcont" href="lodging.html">Lodging</a>
+	            	 </div>	
+	            </div>
+	           	<a id="nomobile" class="navlinks" href="contact.html">Contact US</a>	
+
 				<a class="nodesk navlinks" href="index.html">Home</a>
 				<a class="nodesk navlinks" href="menu.html">Menu</a>
 				<a class="nodesk navlinks" href="events.html">Upcoming Events</a>
@@ -48,13 +51,14 @@
 	<div id="landing">
 		<div id="landbkg">
 			<div id="whitelandbkg">
-				<div id="landlogo">
+<!-- 				<div id="landlogo">
 					<img src="images/moes-bbq-large-logo.png">
-				</div>
+				</div> -->
 				<div id="bglandwds">
-					<a href="menu.html" id="eat" class="bignavwd">Menu</a>
+					<h1>A Southern Food Revival!</h1>
+<!-- 					<a href="menu.html" id="eat" class="bignavwd">Eat</a>
 					<a href="caterinquire.html" id="drink" class="bignavwd">Cater</a>
-					<a href="events.html" id="listen" class="bignavwd">Music</a>
+					<a href="events.html" id="listen" class="bignavwd">Listen</a> -->
 				</div>
 				<div id="address">
 					<h3>120 Grove St-Tahoe City, CA- <a class="teleindex" href="tel:+1530-583-4227">530-583-4227</a></h3>
@@ -63,7 +67,20 @@
 		</div>
 	</div>
 	<footer>
-		
+		<div id="socmed">
+			<a target="_blank" href="https://www.facebook.com/moesoriginalbbqtahoe/?fref=ts"><img class="socpad" src="images/facebook.png"></a>
+			<a target="_blank" href="https://www.instagram.com/moesoriginalbbqtahoecity/?hl=en"><img class="socpad" src="images/intagram.png"></a>
+		</div>
+		<div id="hours">
+			<h4>Hours:</h4>
+			<h4>Monday-Friday 12pm-8pm</h4>
+			<h4>Saturday-Sunday 11am-9pm</h4>
+			<h4>Bar open till midnight Thursday-Saturday</h4>
+		</div>
+		<div id="footer_copyright" class="clearfix">
+			<p class="clearfix fwords">&copy; Moe's BBQ 2017</p>
+			<a target="_blank" id="acwords" class="clearfix fwords" href="http://alpencreative.com/"><p class="fwords"> Website Created by<img id="aclogo" src="images/AlpenCreativeGeoLogo_Color_v2 copy 2.svg"> AlpenCreative</a></p>
+		</div>
 	</footer>
 </body>
 </html>
