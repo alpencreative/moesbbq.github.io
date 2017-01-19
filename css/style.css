@@ -141,6 +141,10 @@ option {
 	font-family: 'Fresca', sans-serif;
 }
 
+br {
+	display: none;
+}
+
 .center {
 	text-align: center;
 }
@@ -381,7 +385,7 @@ nav.darkentext {
 }
 
 .cinqwd {
-	width: 80%;
+	width: 100%;
 	text-align: center;
 	margin: 5% auto;
 }
@@ -714,6 +718,10 @@ nav.darkentext {
 	background-color: rgba(0, 0, 0, 0.8);
 }
 
+#des {
+	width: 45%;
+}
+
 @media only screen and (max-width: 2400px) {
 	h1 {
 		font-size: 3.5em;
@@ -765,7 +773,7 @@ nav.darkentext {
 		font-size: 3.3em;
 	}
 	.col p {
-		font-size: 2.4em;
+		font-size: 2em;
 	}
 	#footerlocation {
 		margin: 10.5%;
@@ -803,6 +811,9 @@ nav.darkentext {
 	#hours {
 		font-size: 2em;
 	}
+	#des {
+		width: 55%;
+	}
 }
 
 @media only screen and (max-width: 1550px) {
@@ -820,6 +831,9 @@ nav.darkentext {
 	}
 	.roundcorn {
 		margin: 1% 0;
+	}
+	.incol {
+		width: 49%;
 	}
 }
 
@@ -952,6 +966,11 @@ nav.darkentext {
 	.dropdown-content {
 		width: 150px;
 	}
+	.col {
+		width: 85%;
+		display: block;
+		margin: 2% auto;
+	}
 	.dcont {
 		width: 150px;
 	}
@@ -969,6 +988,9 @@ nav.darkentext {
 	.bignavwd {
 		margin: 3%;
 		font-size: 3.5em;
+	}
+	.col p {
+		font-size: 2em;
 	}
 	.cinqwds p {
 		font-size: 2em;
@@ -1014,6 +1036,9 @@ nav.darkentext {
 		text-align: center;
 		padding: 20px;
 	}
+	#des {
+		width: 65%;
+	}
 }
 
 @media only screen and (max-width: 1050px) {
@@ -1058,14 +1083,6 @@ nav.darkentext {
 		width: 90%;
 		margin: auto;
 	}
-	.col {
-		width: 85%;
-		display: block;
-		margin: 2% auto;
-	}
-	.col p {
-		font-size: 2em;
-	}
 	.topspace p {
 		font-size: 1.5em;
 	    width: 80%;
@@ -1089,11 +1106,15 @@ nav.darkentext {
 	}
 	#des p {
 		margin: auto;
+		text-align: center;
 	}
 	#tix {
 		width: 14%;
 		font-size: 2em;
 		padding: 1.1%;
+	}
+	#des {
+		width: 70%;
 	}
 }
 
@@ -1175,6 +1196,9 @@ nav.darkentext {
 	}
 	#address h3 {
 		font-size: 1em;
+	}
+	#des {
+		width: 100%;
 	}
 }
 
@@ -1259,6 +1283,9 @@ nav.darkentext {
 @media only screen and (max-width: 500px) {
 	footer {
 		height: 182px;
+	}
+	br {
+		display: block;
 	}
 	.body_sections {
 		padding: 11% 0 0;
