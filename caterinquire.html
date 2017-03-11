@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
 	<title>Moe's Original BBQ:: Tahoe City</title>
 	<meta charset="UTF-8">
@@ -6,48 +7,50 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="view.js"></script>
+	<script type="text/javascript" src="calendar.js"></script>
 </head>
 <body>
-	<header id="blkbkgd">
-		<label class="mobile_toggle" for="toggle">
-			<div class="whiteline line"></div>
-			<div class="whiteline line"></div>
-			<div class="whiteline line"></div>
-		</label>
-		<input type="checkbox" id="toggle">
-	    
-	    <div class="container clearfix">
-	        <nav class="clearfix">
-	            <a id="nomobile" class="navlinks" href="menu.html">Menu</a>
-	            <div class="dropdown navlinks">
-	            	 <button id="nomobile" class="dropbtn">Catering</button>
-	            	 <div class="dropdown-content">
-<!-- 	            		<a class="dcont" href="caterfaq.html">FAQs</a> -->
-						<a class="dcont" href="caterinquire.html">Inquiries</a>
-	            	 </div>	
-	            </div>
-				<div id="landlogo">
-					<a id="nomobile" class="navlinks" href="index.html"><img src="images/moes-bbq-large-logo.png"></a>
-				</div>
-				<div class="dropdown navlinks">
-	            	 <button id="nomobile" class="dropbtn">Music</button>
-	            	 <div class="dropdown-content">
-	            		<a class="dcont" href="events.html">Upcoming Events</a>
-<!-- 						<a class="dcont" href="lodging.html">Lodging</a> -->
-	            	 </div>	
-	            </div>
-	           	<a id="nomobile" class="navlinks" href="contact.html">Contact US</a>	
+    <header id="blkbkgd">
+    <label class="mobile_toggle" for="toggle">
+      <div class="whiteline line"></div>
+      <div class="whiteline line"></div>
+      <div class="whiteline line"></div>
+    </label>
+    <input type="checkbox" id="toggle">
+      
+      <div class="container clearfix">
+          <nav class="clearfix">
+              <a id="nomobile" class="navlinks" href="menu.html">Menu</a>
+              <div class="dropdown navlinks">
+                 <button id="nomobile" class="dropbtn">Catering</button>
+                 <div class="dropdown-content">
+                  <a class="dcont" href="caterinquire.html">Cater Menu</a>
+                  <a class="dcont" href="contactform.php">Inquiries</a>
+                 </div> 
+              </div>
+        <div id="landlogo">
+          <a id="nomobile" class="navlinks" href="index.html"><img src="images/moes-bbq-large-logo.png"></a>
+        </div>
+        <div class="dropdown navlinks">
+                 <button id="nomobile" class="dropbtn">Music</button>
+                 <div class="dropdown-content">
+                  <a class="dcont" href="events.html">Upcoming Events</a>
+<!--            <a class="dcont" href="lodging.html">Lodging</a> -->
+                 </div> 
+              </div>
+              <a id="nomobile" class="navlinks" href="contact.html">Contact US</a>  
 
-				<a class="nodesk navlinks" href="index.html">Home</a>
-				<a class="nodesk navlinks" href="menu.html">Menu</a>
-				<a class="nodesk navlinks" href="events.html">Upcoming Events</a>
-<!-- 				<a class="nodesk navlinks" href="lodging.html">Event Lodging</a> -->
-<!-- 				<a class="nodesk navlinks" href="caterfaq.html">Catering FAQs</a> -->
-				<a class="nodesk navlinks" href="caterinquire.html">Catering Inquiries</a>
-				<a class="nodesk navlinks" href="contact.html">Contact Us</a>
-	        </nav>
-	    </div>
-	</header>
+        <a class="nodesk navlinks" href="index.html">Home</a>
+        <a class="nodesk navlinks" href="menu.html">Menu</a>
+        <a class="nodesk navlinks" href="events.html">Upcoming Events</a>
+<!--        <a class="nodesk navlinks" href="lodging.html">Event Lodging</a> -->
+<!--        <a class="nodesk navlinks" href="caterfaq.html">Catering FAQs</a> -->
+        <a class="nodesk navlinks" href="caterinquire.html">Catering Inquiries</a>
+        <a class="nodesk navlinks" href="contact.html">Contact Us</a>
+          </nav>
+      </div>
+  </header>
 	<section id="menupg">
 		<div id="cinq">
 			<div class="barnbkg">
@@ -152,289 +155,6 @@
 			</div>
 		</div>	
 	</section>
-			<div>
-				<h1 id="orderform">Order Form</h1>
-				<p id=orderformp>To place orders or for inquiries please call 530-583-4227 or use the form below.<!-- email <a href="mailto:abigail@moesoriginalbbq.com" target="_top" id="emaillink">abigail@moesoriginalbbq.com</a> --></p>
-			</div>
-		<div>		
-		<div id="catercontact" class="barnbkg">
-				<div class="wrapper">
-		<section>
-			<div>
-				<div>
-					<form name="htmlform" method="post" action="html_form_send2.php">
-						<table id="catercontact">
-							<tr>
-							 <td valign="top">
-							  <label for="first_name">Name *</label>
-							 </td>
-							 <td valign="top">
-							  <input  class="inputbox" type="text" name="first_name" maxlength="100">
-							 </td>
-							</tr>
-	 
-							<tr>
-							 <td valign="top">
-							  <label for="last_name">Venue Name</label>
-							 </td>
-							 <td valign="top">
-							  <input  class="inputbox" type="text" name="venue_name" maxlength="50">
-							 </td>
-							</tr>
-
-							<tr>
-							 <td valign="top">
-							  <label for="street_address">Street Address *</label>
-							 </td>
-							 <td valign="top">
-							  <input  class="inputbox" type="text" name="street_address" maxlength="80">
-							 </td>
-							</tr>
-
-							<tr>
-							 <td valign="top">
-							  <label for="city_name">City *</label>
-							 </td>
-							 <td valign="top">
-							  <input  class="inputbox" type="text" name="city_name" maxlength="80">
-							 </td>
-							</tr>
-
-							<tr>
-							 <td valign="top">
-							  <label for="state_name">State/Province *</label>
-							 </td>
-							 <td valign="top">
-							  <input  class="inputbox" type="text" name="state_name" maxlength="80">
-							 </td>
-							</tr>
-
-							<tr>
-							 <td valign="top">
-							  <label for="zip_code">Zip Code *</label>
-							 </td>
-							 <td valign="top">
-							  <input  class="inputbox" type="text" name="zip_code" maxlength="80">
-							 </td>
-							</tr>
-
-							<tr>
-							 <td valign="top">
-							  <label for="question17_dt">Date/Time of Event</label>
-							 </td>
-							 <td valign="top">
-							  <span class="datespan">
-							  	<input id="question17_dt" name="question17_dt" class="inputbox" value="11/21/2016">
-							  </span>
-							  <script type="text/javascript">
-							  	$(function() { $("#Question16").datepicker({ dateFormat: 'm/d/yy', changeYear: true, showAnim: 'fadeIn' }); });
-							  </script>
-							  <span class="datespan">
-							  	<select id="question17_h" name="question17_h">
-							  		<option value="1">1</option>
-							  		<option value="2">2</option>
-							  		<option value="3">3</option>
-							  		<option value="4">4</option>
-							  		<option value="5">5</option>
-							  		<option value="6">6</option>
-							  		<option value="7">7</option>
-							  		<option value="8">8</option>
-							  		<option value="9">9</option>
-							  		<option value="10">10</option>
-							  		<option value="11">11</option>
-							  		<option value="12">12</option>
-							  	</select>
-							  	:
-							  	<select id="question17_m" name="question17_m">
-							  		<option value="00">00</option>
-							  		<option value="01">01</option>
-							  		<option value="02">02</option>
-							  		<option value="03">03</option>
-							  		<option value="04">04</option>
-							  		<option value="05">05</option>
-							  		<option value="06">06</option>
-							  		<option value="07">07</option>
-							  		<option value="08">08</option>
-							  		<option value="09">09</option>
-							  		<option value="10">10</option>
-							  		<option value="11">11</option>
-							  		<option value="12">12</option>
-							  		<option value="13">13</option>
-							  		<option value="14">14</option>
-							  		<option value="15">15</option>
-							  		<option value="16">16</option>
-							  		<option value="17">17</option>
-							  		<option value="18">18</option>
-							  		<option value="19">19</option>
-							  		<option value="20">20</option>
-							  		<option value="21">21</option>
-							  		<option value="22">22</option>
-							  		<option value="23">23</option>
-							  		<option value="24">24</option>
-							  		<option value="25">25</option>
-							  		<option value="26">26</option>
-							  		<option value="27">27</option>
-							  		<option value="28">28</option>
-							  		<option value="29">29</option>
-							  		<option value="30">30</option>
-							  		<option value="31">31</option>
-							  		<option value="32">32</option>
-							  		<option value="33">33</option>
-							  		<option value="34">34</option>
-							  		<option value="35">35</option>
-							  		<option value="36">36</option>
-							  		<option value="37">37</option>
-							  		<option value="38">38</option>
-							  		<option value="39">39</option>
-							  		<option value="40">40</option>
-							  		<option value="41">41</option>
-							  		<option value="42">42</option>
-							  		<option value="43">43</option>
-							  		<option value="44">44</option>
-							  		<option value="45">45</option>
-							  		<option value="46">46</option>
-							  		<option value="47">47</option>
-							  		<option value="48">48</option>
-							  		<option value="49">49</option>
-							  		<option value="50">50</option>
-							  		<option value="51">51</option>
-							  		<option value="52">52</option>
-							  		<option value="53">53</option>
-							  		<option value="54">54</option>
-							  		<option value="55">55</option>
-							  		<option value="56">56</option>
-							  		<option value="57">57</option>	
-							  		<option value="58">58</option>
-							  		<option value="59">59</option>							  		
-							  	</select>
-							  	<select id="question17_a" name="question17_a">
-							  		<option value="AM">AM</option>
-							  		<option value="PM">PM</option>
-							  	</select>
-							  </span>
-							  <script type="text/javascript">
-							  	$(function() { $("#Question17_dt").datepicker({ dateFormat: 'm/d/yy', changeYear: true, showAnim: 'fadeIn' }); });
-							  </script>
-							 </td>
-							</tr>							
-
-							<tr>
-							 <td valign="top">
-							  <label for="number">Number of Attendees</label>
-							 </td>
-							 <td valign="top">
-							  <input  class="inputbox" type="text" name="number" maxlength="80">
-							 </td>
-							</tr>
-
-							<tr>
-							 <td valign="top">
-							  <label for="budget">Budget ($ per person)</label>
-							 </td>
-							 <td valign="top">
-							  <input  class="inputbox" type="text" name="budget" maxlength="80">
-							 </td>
-							</tr>
-
-							<tr>
-							 <td valign="top">
-							  <label for="service_name">Level of Service</label>
-							 </td>
-							 <td valign="top">
-							  <select name="Question20" id="question20">
-							  	<option value selected="selected">-----</option>
-							  	<option>Pick Up</option>
-							  	<option>Delivery</option>
-							  	<option>Full Service</option>
-							  	<option>Uncertain</option>
-							  </select>
-							 </td>
-							</tr>								
-
-							<tr>
-							 <td valign="top">
-							  <label for="email">Type of Event</label>
-							 </td>
-							 <td valign="top">
-							  <select name="Question20" id="question20">
-							  	<option value selected="selected">-----</option>
-							  	<option>Corporate</option>
-							  	<option>Grooms Dinner/Wedding</option>
-							  	<option>Graduation</option>
-							  	<option>Home</option>
-							  	<option>Other</option>							  	
-							  </select>
-							 </td>
-							</tr>
-
-							<tr>
-							 <td valign="top">
-							  <label for="comments">Comments *</label>
-							 </td>
-							 <td valign="top">
-							  <textarea  class="inputbox" name="comments" maxlength="1000" cols="80" rows="3"></textarea>
-							 </td>
-							</tr>
-							<tr>
-
-							<tr>
-							 <td valign="top">
-							  <label for="email">Organization</label>
-							 </td>
-							 <td valign="top">
-							  <input  class="inputbox" type="text" name="organization_name" maxlength="80">
-							 </td>
-							</tr>
-
-							<tr>
-							 <td valign="top">
-							  <label for="email">I Prefer Contact By: *</label>
-							 </td>
-							 <td valign="top">
-							  <select name="question18" id="question20">
-							  	<option value selected="selected">-----</option>
-							  	<option>Email</option>
-							  	<option>Phone</option>
-							  </select>
-							 </td>
-							</tr>	
-
-							<tr>
-							 <td valign="top">
-							  <label for="email">Email Address *</label>
-							 </td>
-							 <td valign="top">
-							  <input  class="inputbox" type="text" name="email" maxlength="80">
-							 </td>
-							</tr>							
-
-							<tr>
-							 <td valign="top">
-							  <label for="telephone">Telephone Number</label>
-							 </td>
-							 <td valign="top">
-							  <input  class="inputbox" type="text" name="telephone" maxlength="30">
-							 </td>
-							</tr>
-
-							<tr>
-							 <td colspan="2" style="text-align:center">
-							  <input type="submit" value="Submit">
-							 </td>
-							</tr>
-							<tr>
-								<td colspan="2" style="text-align:center">
-									<p>* Required field</p>
-								</td>
-							</tr>
-						</table>
-					</form>
-				</div>
-			</div>
-		</section>
-	</div>
-		</div>
-	</div>
 	<footer>
 		<div id="socmed">
 			<a target="_blank" href="https://www.facebook.com/moesoriginalbbqtahoe/?fref=ts"><img class="socpad" src="images/facebook.png"></a>
